@@ -1,0 +1,21 @@
+{include file="index/header" /}
+
+<div class="header">
+    <h1>修改商店</h1>
+</div>
+
+<div class="content">
+    <form method="post" name="shop" action="{:url('Shop/update')}" class="pure-form pure-form-stacked">
+        <input type="hidden" value="{$shop.id}" name="id" />
+        <label for="name">商店名称</label>
+        <input id="name" type="name" name="name" placeholder="商店名称" value="{$shop.name}">
+
+        <div style="margin-top: 15px;">
+            <button type="submit" class="pure-button pure-button-primary">提交</button>
+        </div>
+        
+    </form>
+</div>
+
+
+{include file="index/footer" /}

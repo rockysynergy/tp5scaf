@@ -1,0 +1,21 @@
+{include file="index/header" /}
+
+<div class="header">
+    <h1>商店列表</h1>
+</div>
+
+<div class="content">
+    <h2>{$admin.user_id}</h2>
+    <ul>
+        {volist name="shops" id="shop"}
+            <li>
+                {$shop.name}
+                <a href="{:url('admin/Shop/edit?id=' . $shop.id)}">编辑</a>
+                <a href="{:url('Shop/delete?id=' . $shop.id)}">删除</a>                
+            </li>
+        {/volist}
+    </ul>
+</div>
+
+
+{include file="index/footer" /}

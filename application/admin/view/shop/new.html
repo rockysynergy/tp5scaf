@@ -1,0 +1,20 @@
+{include file="index/header" /}
+
+<div class="header">
+    <h1>新增商店</h1>
+</div>
+
+<div class="content">
+    <form method="post" name="shop" action="{:url('Shop/add')}" class="pure-form pure-form-stacked">
+        <label for="name">商店名称</label>
+        <input id="name" type="name" name="name" placeholder="商店名称">
+
+        <div style="margin-top: 15px;">
+            <button type="submit" class="pure-button pure-button-primary">添加</button>
+        </div>
+        
+    </form>
+</div>
+
+
+{include file="index/footer" /}

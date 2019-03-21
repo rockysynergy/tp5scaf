@@ -1,0 +1,22 @@
+{include file="index/header" /}
+
+<div class="header">
+    <h1>登录</h1>
+</div>
+
+<div class="content">
+    <form method="post" name="shop" action="{:url('Login/verify')}" class="pure-form pure-form-stacked">
+        <label for="name">用户名：</label>
+        <input id="identifier" type="text" name="identifier" placeholder="用户名">
+
+        <label for="name">密码：</label>
+        <input id="password" type="password" name="password">
+
+        <div style="margin-top: 15px;">
+            <button type="submit" class="pure-button pure-button-primary">登录</button>
+        </div>
+        
+    </form>
+</div>
+
+{include file="index/footer" /}
